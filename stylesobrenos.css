@@ -1,0 +1,60 @@
+.logo {
+    display:flex;
+    justify-content: center;
+    margin: 0px 0px 0px 0px;
+    }
+  
+  .botoes {
+    background:transparent; 
+    border:none; 
+    cursor:pointer;
+    margin: 5px 50px; 
+    color: #ffffff;
+    } 
+  
+  #itens {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    background-color: #000000;
+    color: rgb(0, 0, 0);
+    text-align:center;
+    text-decoration: none;
+    padding: 1px 5px;
+    border: 3px solid rgb(0, 0, 0);
+    flex-wrap: wrap;
+    }
+  
+  .chamado {
+    font-family: 'Lucida Sans';
+    font-size: 20px;
+    border: 3px solid #00C2CC;
+    text-align:center; 
+    background-color: #00C2CC;
+    color: white;
+    margin-top: -5px;
+    }
+
+.conteudo {
+  margin-bottom: 48px;
+  border-top: 0.4px solid #FFF2E7;
+  }
+
+.conteudo-principal {
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: space-around;
+  }
+    
+.conteudo-principal-escrito {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  }
+    
+.conteudo-principal-paragrafo {
+  font-family: 'Sarala', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #000000;
+   }

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylecadastro.css">
+    <title>Cadastro</title>
+</head>
+<body>    
+    <div id="cadastro">
+        <form method="post" action="gravar.jsp" method="post"> 
+          <h1>Cadastro</h1>           
+          <p> 
+            <label for="nome_cad">Seu nome</label>
+            <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="Luiz Augusto" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'nome_cad';}"> />
+          </p>          
+          <p> 
+            <label for="email_cad">Seu e-mail</label>
+            <input id="email_cad" name="email_cad" required="required" type="email" placeholder="contato@htmlecsspro.com" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'email_cad';}">/> 
+          </p>         
+          <p> 
+            <label for="senha_cad">Sua senha</label>
+            <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="1234" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'senha_cad';}">/>
+          </p>         
+          <p> 
+            <input type="submit" value="Cadastrar" onclick="checkForm()" /> 
+          </p>         
+          <p class="link">  
+            Já tem conta?
+            <a href="login.html"> Ir para Login </a>
+          </p>
+        </form>
+        <script>
+        function checkForm() {
+          var nome_cad = document.getElementById("nome_cad").value;
+          var email_cad = document.getElementById("email_cad").value;
+          var senha = document.getElementById("senha_cad").value;
+
+          if (nome_cad == '' || email_cad == '' ||  senha_cad == '') {
+              alert("Por favor preencha todos os campos.");
+          } else {
+              var name_cad = document.getElementById("nome_cad");
+              var email_cad = document.getElementById("email_cad");
+              var senha_cad = document.getElementById("senha_cad");
+
+              if (name_cad.innerHTML == 'Nome' || email_cad.innerHTML == 'E-mail' ||  senha_cad.innerHTML == 'Senha') {
+                  alert("Por favor, preencha o formul&aacute;rio com informa&ccedil;&otilde;es v&aacute;lidas");
+              } else {
+
+                  document.getElementById("myForm").submit();
+              }
+          }
+      }
+    </script>
+      </div>
+    </div>
+  </div> 
+</body>
+</html>

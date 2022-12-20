@@ -1,0 +1,132 @@
+.vitrine    {
+    display:    block;
+    margin: 50px auto;
+    max-width:  1300px;
+    text-align: center;
+    width:  100%;
+    }
+
+    body    {
+    background: rgb(255, 254, 254);
+    font-family:    Cambria,    Cochin, Georgia, Times,   'Times New  Roman',   serif;
+    font-size:  13px;
+    margin: 0;
+    padding:    0;
+    }
+
+    ul  {
+    padding:    0;
+    margin: 0;
+    }
+
+    li  {
+    list-style: none;
+    }
+
+
+    .produto-list   {
+    align-items:    center;
+    display:    flex;
+    justify-content:    center;
+    margin: 0    auto;
+    max-width:  1300px;
+    width:  100%;
+    @media  (max-width:   991px){
+    flex-wrap:  wrap;
+    }
+    
+    }
+    .produto-item   {
+    border: 1px  solid ;
+    cursor: pointer;
+    margin: 15px 5px;
+    max-width:  300px;
+    transition: .2s;
+    width:  100%;
+    } 
+
+    .produto-link   {
+    color:  #555;
+    text-decoration:    none;
+    }
+
+    .produto-info   {
+    margin: 0;
+    padding:    0;
+    position:   relative;
+    width:  100%;
+    }
+ 
+    .produto-info-img   {
+    border-bottom:  1px   solid  border;
+    height: 240px;
+    width:  100%;
+    align-items:    center;
+    display:    flex;
+    justify-content:    center;
+    }
+    img {
+    max-width:  200px;
+    }
+    
+
+.produto-info-descricao   {
+    padding:    15px;
+}
+
+.title  {
+    font-size:  13px;
+    margin: 0;
+    padding:    0;
+    }
+
+.descricao    {
+    height: 30px;
+    margin: 3px  0;
+
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    display:    -webkit-box;
+    overflow:   hidden;
+    }
+
+    .preco-box  {
+    align-items:    center;
+    border-top: 1px  solid border;
+    display:    flex;
+    justify-content:    space-between;
+    padding:    15px;
+    }
+
+    .preco del{
+    color:  #ae0000;
+    font-size:  14px;
+    margin-right:   10px;
+    }
+
+    ins {
+    color: #00cc03;
+    font-size:  18px;
+    font-weight:    bold;
+    text-decoration:    none;   
+    }
+
+    .preco-info {
+    color:  #5e5e5e;
+    display:    block;
+    font-weight:    bold;
+    margin-top: 5px;
+    }
+
+    :hover {
+        transform: translateY(-2px);
+        box-shadow: shadow;
+      }
+
+    .fas    {
+    margin-left:    3px;
+    }
+
+    .d-block    {
+    display:    block;
+    }

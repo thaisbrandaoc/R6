@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta usuario="viewport"content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylelogin.css">
+        <title>Login</title>
+    </head>
+    <body id="bodylogin">
+        <div id="login">
+            <form class="card" action="gravar.jsp" method="post"> 
+                <div class="card-header">
+                    <h2>LOGIN</h2>
+                </div>
+                <div class="card-content">
+                    <div class="card-content-area">
+                        <label for="usuario">USUÁRIO</label>
+                        <input type="text" id="usuario" autocomplete="off" required>
+                    </div>
+                    <div class="card-content-area">
+                        <label for="password">SENHA</label>
+                        <input type="password" id="password" autocomplete="off" required>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <button id="submit">LOGIN</button>
+                    <a href="cadastro.html" class="cadastre_se">Não tem conta? Cadastre-se </a>
+                </div>
+            </form>
+            <script>
+                 <span role="alert" id="usuarioError" aria-hidden="true">
+                    Por favor, digite um usuário.
+                  </span> 
+
+            const submit = document.getElementById("submit");
+
+submit.addEventListener("click", validate);
+
+function validate(e) {
+  e.preventDefault();
+
+  const usuarioField = document.getElementById("usuario");
+  let valid = true;
+
+  if (!usuarioField.value) {
+    const usuarioError = document.getElementById("usuarioError");
+    usuarioError.classList.add("visible");
+    firstusuarioField.classList.add("invalid");
+    usuarioError.setAttribute("aria-hidden", false);
+    usuarioError.setAttribute("aria-invalid", true);
+  }
+  return valid;
+}
+</script>
+        </div>
+    </body>
+</html>
